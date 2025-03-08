@@ -1,5 +1,7 @@
 package com.ohgiraffers.a_literal_and_variable.level01.basic;
 
+import java.net.SocketOption;
+
 public class Application2 {
 
 	public static void main(String[] args) {
@@ -12,5 +14,12 @@ public class Application2 {
 		 * 면적 : 455.0
 		 * 둘레 : 97.8
 		 *  */
+
+		double num1 = 12.5;
+		double num2 = 36.4;
+
+	System.out.println("면적 :" +(num1 * num2));
+	System.out.println("둘레 :" + (num1 + num2) *2);
+
 	}
 }
