@@ -1,5 +1,7 @@
 package com.ohgiraffers.d_looping_and_branching.level02.normal;
 
+import java.util.Scanner;
+
 public class Application3 {
 
 	public static void main(String[] args) {
@@ -13,7 +15,19 @@ public class Application3 {
 		 * -- 출력 예시 --
 		 * 수박수박수
 		 * */
-		
+		char oddChar = '수';
+		char evenChar = '박';
+
+		System.out.print("정수를 입력하시요 : ");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+
+		for (int i = 1; i <= num; i++) {
+			if (i % 2 == 0) System.out.print(evenChar);
+			else System.out.print(oddChar);
+
+		}
+
 	}
 
 }
