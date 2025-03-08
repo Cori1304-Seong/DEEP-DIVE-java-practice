@@ -1,5 +1,7 @@
 package com.ohgiraffers.b_operator.level01;
 
+import java.util.Scanner;
+
 public class Application2 {
 
     public static void main(String[] args) {
@@ -14,5 +16,13 @@ public class Application2 {
          * 합격입니다~~!!! 또는 아쉽지만 불합격입니다..
          *
          * */
+        Scanner scanner = new Scanner(System.in);
+        int num1;
+
+        System.out.print("정수를 입력하세요: ");
+        num1 = scanner.nextInt();
+
+        System.out.println(num1 >= 60 ? "합격입니다~!!!":"불합격입니다...");
+
     }
 }
