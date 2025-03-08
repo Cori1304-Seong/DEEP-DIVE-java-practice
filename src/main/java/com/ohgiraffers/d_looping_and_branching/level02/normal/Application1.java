@@ -1,5 +1,7 @@
 package com.ohgiraffers.d_looping_and_branching.level02.normal;
 
+import java.util.Scanner;
+
 public class Application1 {
 
 	public static void main(String[] args) {
@@ -18,6 +20,15 @@ public class Application1 {
 		 * 3 : l
 		 * 4 : e
 		 * */
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("문자열를 입력하세요 : ");
+		String str = scanner.next();
+
+		for (int i = 0; i < str.length(); i++) {
+			System.out.printf("%d : %c\n",i, str.charAt(i));
+		}
 		
 	}
 
