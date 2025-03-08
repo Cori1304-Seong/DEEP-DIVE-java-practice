@@ -1,5 +1,7 @@
 package com.ohgiraffers.b_operator.level01;
 
+import java.util.Scanner;
+
 public class Application1 {
 
     public static void main(String[] args) {
@@ -13,6 +15,15 @@ public class Application1 {
          * 두 수 중 큰 수는 20입니다.
          *
          * */
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("정수를 입력하세요: ");
+        int num1 = scanner.nextInt();
+        System.out.print("정수를 입력하세요: ");
+        int num2 = scanner.nextInt();
+
+        System.out.println("두 수 중 큰 수 는: "+ (num1 > num2 ? num1 : num2)+"입니다");
     }
 
 }
