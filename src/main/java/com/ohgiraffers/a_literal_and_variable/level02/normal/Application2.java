@@ -11,5 +11,17 @@ public class Application2 {
 		 * 총점 : 201
 		 * 평균 : 67
 		 *  */
+
+		double korLanguageScore = 80.5;
+		double mathScore= 50.6;
+		double englishScore = 70.8;
+
+		int sum = (int)(korLanguageScore + mathScore + englishScore);
+		int average = sum / 3;
+
+
+		System.out.println("총점 : " + sum);
+		System.out.println("평균 : " + average);
+
 	}
 }
