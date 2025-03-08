@@ -1,5 +1,7 @@
 package com.ohgiraffers.c_conditional.level03.hard;
 
+import java.util.Scanner;
+
 public class Application2 {
 	
 	public static void main(String[] args) {
@@ -20,6 +22,20 @@ public class Application2 {
 		 * -- 출력 예시 --
 		 * banana의 가격은 3000원 입니다.
 		 * */
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("과일 이름을 입력하새요 : ");
+		String str = scanner.nextLine();
+
+		try {
+			Fruits fruit =Fruits.valueOf(str.toUpperCase());
+			System.out.println(fruit+"의 가격은 " + fruit.getPrice()+"원 입니다");
+
+		}catch ( IllegalArgumentException e){
+			System.out.println("준비된 상품이 없습니다.");
+
+		}
+
 		
 	}
 }
