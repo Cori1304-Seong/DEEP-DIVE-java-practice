@@ -1,5 +1,7 @@
 package com.ohgiraffers.d_looping_and_branching.level01.basic;
 
+import java.util.Scanner;
+
 public class Application3 {
 
 	public static void main(String[] args) {
@@ -12,7 +14,19 @@ public class Application3 {
 		 * -- 출력 예시 --
 		 * 1부터 10까지 짝수의 합 : 30
 		 * */
-		
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("정수를 입력하세요 : ");
+		int num = scanner.nextInt();
+		int sum = 0;
+
+		for (int i = 0; i <= num; i = i + 2) {
+
+			sum += i;
+		}
+
+		System.out.printf("%d부터 %d까지의 짝수의 합 : %d", 1, num, sum);
 	}
 
 }
