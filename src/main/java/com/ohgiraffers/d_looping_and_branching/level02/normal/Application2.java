@@ -10,5 +10,13 @@ public class Application2 {
 		 * abcdefghijklmnopqrstuvwxyz
 		 * */
 		
+	char ch = 'a';
+
+	while (ch <= 'z') {
+		System.out.print(ch);
+		ch++;
 	}
+	}
+
+
 }
