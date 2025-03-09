@@ -1,5 +1,7 @@
 package com.ohgiraffers.e_array.level01.basic;
 
+import java.util.Scanner;
+
 public class Application2 {
 
 	public static void main(String[] args) {
@@ -23,7 +25,18 @@ public class Application2 {
 		 * -- 출력 예시 --
 		 * 준비된 과일이 없습니다.
 		 * */
-		
-		
+
+		String[] fruits = {"딸기", "바나나", "복숭아", "키위", "사과"};
+		Scanner scanner = new Scanner(System.in);
+
+		String input = scanner.nextLine();
+
+		for (int i = 0; i < fruits.length; i++) {
+			if (fruits[i].equals(input)) {
+				System.out.println(fruits[i]);
+				return;
+			}
+		}
+		System.out.println("준비된 과일이 없습니다.");
 	}
 }
