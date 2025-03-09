@@ -1,5 +1,7 @@
 package com.ohgiraffers.c_conditional.level01.basic;
 
+import java.util.Scanner;
+
 public class Application2 {
 
 	public static void main(String[] args) {
@@ -13,6 +15,13 @@ public class Application2 {
 		 * -- 출력 예시 --
 		 * 홀수다.
 		 * */
-		
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("정수를 하나 입력하세요: ");
+		int a = scanner.nextInt();
+
+		System.out.println(a % 2 == 0 ? "짝수다" : "홀수다");
+
+
 	}
 }

@@ -1,5 +1,7 @@
 package com.ohgiraffers.c_conditional.level02.normal;
 
+import java.util.Scanner;
+
 public class Application2 {
 
 	public static void main(String[] args) {
@@ -14,6 +16,22 @@ public class Application2 {
 		 * 
 		 * 계산 예시) BMI = 67 / (1.7 * 1.7)
 		 * */
-		
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("신장 입력하세요 (m): ");
+		double height = scanner.nextDouble();
+
+		System.out.print("몸무게 입력하세요 (kg): ");
+		double weight = scanner.nextDouble();
+
+		int BMI =(int)( weight / (height * height));
+
+		if (BMI < 20) System.out.println("당신은 저체중 입니다.");
+		else if (BMI >= 20 && BMI < 25) System.out.println("당신은 정상체중 입니다.");
+		else if (BMI >= 25 && BMI < 30) System.out.println("당신은 과체중 입니다.");
+		else if (BMI >= 30 ) System.out.println("당신은 비만 입니다.");
+
+
+
 	}
 }
